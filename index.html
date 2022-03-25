@@ -29,9 +29,9 @@
   <body onload="colorSvgIcons()">
     <!-- header -->
     <header>
-      <div class="header__logo center">
+      <div class="header__logo center right">
         <!-- 로고 이미지 -->
-        <img src="./statics/images/logo/logo.png" />
+        <img src="./statics/images/logo/supme_logo.png" />
       </div>
       <nav class="center">
         <!-- header-button -->
@@ -45,38 +45,44 @@
     </header>
     <main>
       <!-- banner -->
-      <div class="top-banner">
-        <div class="top-banner__content">
-          <p class="top-banner__title bold">
-            <!-- 띄어쓰기 포함 최대17자 -->
-            프론트엔드를 대표하는
-            <br />
-            <!-- 띄어쓰기 포함 최대17자 -->
-            라이브러리, 리액트.
-          </p>
-          <p class="top-banner__subtitle regular">
-            <!-- 띄어쓰기 포함 27자 -->
-            리액트 스쿨과 함께라면
-          </p>
-          <a href="https://projectlion.io/">
-            <div class="top-banner__cta-button center bold">
-              <!-- 띄어쓰기 포함 16자 -->
-              스쿨 신청 상담받기
+      <div class="top-banner-big-container">
+        <div class="top-banner-big">
+          <div class="top-banner-big__image-container">
+            <img 
+              src="./statics/images/top-banner/back_main.jpg"
+              class="top-banner__image-big"
+            >
+          </div>
+          <div class="top-banner-big__content">
+            <div class="top-banner__content" style="text-align: left;">
+              <p class="top-banner__title bold" style="font-size: 42px; line-height: 52px;">
+                단 1분으로
+            </br>
+            시작되는 설레임
+              </p>
+              <p class="top-banner__subtitle regular" style="font-size: 15px; line-height: 42px;">
+                <!-- 띄어쓰기 포함 27자 -->
+                서프미와 함께라면
+              </p>
+              <div style="display: flex; justify-content: left;">
+                <a href="https://projectlion.io/">
+                  <div class="top-banner__cta-button center bold" style=" margin-top: 30px">
+                    <!-- 띄어쓰기 포함 16자 -->
+                    여행 시작하기!
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
-        <!-- 배너 이미지 -->
-        <img
-          src="./statics/images/top-banner/origin_react_react_sns.png"
-          class="top-banner__image"
-        />
+        
       </div>
       <!-- services -->
       <section id="service-section" class="container">
         <div class="section-title">
           <h2 class="section-title__main center bold">Services</h2>
           <h3 class="section-title__sub center bold"
-            >지금 리액트스쿨과 함께 리액트를 배워야하는 이유!</h3
+            >서프미와 함께 여행을 떠나야 하는 이유!</h3
           >
         </div>
         <div class="grid-3fr">
@@ -84,73 +90,83 @@
             <!-- 카드 첫번째이미지 -->
             <img
               class="card__image"
-              src="./statics/images/services/img_1st.png"
+              src="./statics/images/services/time_ser.png"
             />
             <p class="card__title center bold">
               <!-- 최대 길이 17자 -->
-              리엑트</p
+              시간 절약</p
             >
             <p class="card__subtitle center regular">
               <!-- 최대 길이 22자 -->
-              개발자들이 가장 많이 배우고 싶어하는
+              취향 조사 한번하면
               <br />
               <!-- 최대 길이 22자 -->
-              웹 프론트엔드 라이브러리입니다.
+              여행 기획은 
+              <br />
+              단 1분만에!
             </p>
           </div>
           <div class="card__">
             <!-- 카드 두번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/services/img_2nd.png"
+              src="./statics/images/services/local_ser.png"
             />
             <p class="card__title center bold"
               ><!-- 최대 길이 17자 -->
-              대기업에서 더 많이 찾는 개발자</p
-            >
+              로컬여행</p>
+            
             <p class="card__subtitle center regular">
               <!-- 최대 길이 22자 -->
-              리액트는 규모가 큰 서비스 어플리케이션에도
+              남들이 잘 모르는 
               <br />
               <!-- 최대 길이 22자 -->
-              높은 안정성과 성능을 발휘합니다.
+              로컬 여행지의
               <!-- 최대 길이 22자 -->
-              <br />많은 대기업에서 리액트 개발자를 찾습니다.</p
-            >
+              <br />매력을 알아봅시다
+            
           </div>
           <div class="card__">
             <!-- 카드 세번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/services/img_3rd.png"
+              src="./statics/images/services/like_ser.png"
             />
             <p class="card__title center bold center">
               <!-- 최대 길이 17자 -->
-              완벽하게 준비된 커리큘럼
+              취향저격
             </p>
             <p class="card__subtitle center regular">
               <!-- 최대 길이 22자 -->
-              리액트 스쿨이 준비한 <br />
+              설문 조사를 통해 <br />
               <!-- 최대 길이 22자 -->
-              쌍방향 커리큘럼을 통해서<br />
+              본인 취향에 딱 맞는<br />
               <!-- 최대 길이 22자 -->
-              빠른 습득을 보장합니다.</p
+              여행 추천 받기</p
             >
           </div>
         </div>
       </section>
-      <div class="container">
-        <img
+      <div class="container" 
+      style="background-image: url('./statics/images/promotion-banner/pro_banner.png'); height: 140px;  display: flex; flex-direction: column; justify-content: center;"
+      >
+        <div class ='promotion-banner-text' style="text-align: center;">
+         Just pack up and go
+        </div>
+        <!-- <img
           class="promotion-banner-image"
-          src="./statics/images/promotion-banner/promotion-banner.png"
-        />
+          src="./statics/images/promotion-banner/pro_banner.png"
+        /> -->
       </div>
+
+
+
       <!-- productions -->
       <section id="product-section" class="container">
         <div class="section-title">
           <h2 class="section-title__main center bold">Product</h2>
           <h3 class="section-title__sub center bold"
-            >리액트 스쿨의 교육 플랜들</h3
+            >서프미의 여행 기획</h3
           >
         </div>
         <div class="grid-3fr">
@@ -158,60 +174,59 @@
             <!-- 카드 첫번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/product/img_1st.png"
+              src="./statics/images/product/bau_prod.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
-              라이트 플랜</p
+              바우처 플랜</p
             >
             <p class="card__subtitle regular">
               <!-- 최대 길이 22자 -->
-              자신만의 페이스에 맞춰 학습하고 싶은 분들께 <br />
+              자신의 취향에 맞는 여행 정보를 받아보세요<br />
               <!-- 최대 길이 22자 -->
-              추천합니다. 자기만의 수강계획으로 학습합니다.</p
-            >
-            <div class="card__tag"> 자기주도학습 </div>
+            </p>
+            <div class="card__tag"> 여행 정보 얻기 </div>
           </div>
           <div class="card__">
             <!-- 카드 두번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/product/img_2nd.png"
+              src="./statics/images/product/month_prod.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
-              베이직 플랜
+              월 구독 플랜
             </p>
             <p class="card__subtitle regular">
               <!-- 최대 길이 22자 -->
-              학습 매니저 주도 일정 아래 꾸준하게 학습하고
+              월 구독료를 납입하면 떠나고 싶을때 언제든지
               <br />
               <!-- 최대 길이 22자 -->
-              싶은 분들을 위한 코스입니다.
+              떠날 수 있습니다.
             </p>
             <div class="card__tag">
               <!-- 길이 자유 -->
-              일정을꼼꼼히
+              바로 떠나기
             </div>
           </div>
           <div class="card__">
             <!-- 카드 세번째 이미지 -->
             <img
               class="card__image"
-              src="./statics/images/product/img_3rd.png"
+              src="./statics/images/product/gift_prod.png"
             />
             <p class="card__title bold">
               <!-- 최대 길이 17자 -->
-              플러스 플랜</p
+              기프트 플랜</p
             >
             <p class="card__subtitle regular"
-              >무조건 완강을 위한 집중케어 코스입니다. 전담 매
+              >소중한 사람에게 선물을 하세요
               <!-- 최대 길이 22자 -->
               <br />
               <!-- 최대 길이 22자 -->
-              니저 분이 꼼꼼하게 밀착케어해드립니다.
+             
             </p>
-            <div class="card__tag"> 밀착케어코스 </div>
+            <div class="card__tag"> 여행 선물 </div>
           </div>
         </div>
       </section>
@@ -220,74 +235,33 @@
         <div class="section-title">
           <h2 class="section-title__main center bold">Team</h2>
           <h3 class="section-title__sub center bold"
-            >리액트 스쿨의 핵심 강사진</h3
+            >여행에 진심인 서프미 CREW</h3
           >
         </div>
         <div class="grid-4fr">
-          <div class="card__">
+     
             <!-- 카드 첫번째 이미지  -->
-            <img class="card__image" src="./statics/images/team/img_1st.png" />
-            <p class="card__title center bold">
-              <!-- 최대 13자 -->
-              강사명</p
-            >
-            <p class="card__subtitle center regular">
-              <!-- 최대 16자 -->
-              강사타이틀</p
-            >
-          </div>
-          <div class="card__">
-            <img class="card__image" src="./statics/images/team/img_2nd.png" />
-            <p class="card__title center bold">
-              <!-- 최대 13자 -->
-              강사명</p
-            >
-            <p class="card__subtitle center regular">
-              <!-- 최대 16자 -->
-              강사타이틀</p
-            >
-          </div>
-          <div class="card__">
-            <!-- 카드 두번째 이미지  -->
-            <img class="card__image" src="./statics/images/team/img_3rd.png" />
-            <p class="card__title center bold">
-              <!-- 최대 13자 -->
-              강사명</p
-            >
-            <p class="card__subtitle center regular">
-              <!-- 최대 16자 -->
-              강사타이틀</p
-            >
-          </div>
-          <div class="card__">
-            <!-- 카드 세번째 이미지  -->
-            <img class="card__image" src="./statics/images/team/img_4th.png" />
-            <p class="card__title center bold">
-              <!-- 최대 13자 -->
-              강사명</p
-            >
-            <p class="card__subtitle center regular">
-              <!-- 최대 16자 -->
-              강사타이틀</p
-            >
-          </div>
+            <img  src="./statics/images/team/team.png" />
+           
+          
+         
         </div>
       </section>
-      <div class="container">
+      <!--div class="container">
         <a class="cta-button__wrapper" href="https://projectlion.io/">
           <div class="cta-button center bold">
             <!-- 띄어쓰기 포함 16자 -->
-            스킬 신청 상담받기
+         
           </div>
         </a>
-      </div>
+      <!--/!--div-->
     </main>
     <footer>
       <div>
         <div class="footer__top">
           <div class="footer__top__logo">
             <!-- 로고 이미지 -->
-            <img src="./statics/images/logo/logo.png" />
+            SUPME
           </div>
           <div class="footer__top__info">
             <div class="footer__top__info__external-link">

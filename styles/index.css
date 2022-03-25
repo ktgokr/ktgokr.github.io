@@ -17,20 +17,20 @@
 
   /* 상단 바 */
   /* 상단 바 배경 색 */
-  --header-bg: var(--body-bg);
+  --header-bg: #ffffff;
   /* 상단 바 글자 색 */
   --header-font: #000000;
 
   /* 상단 배너 */
   /* 상단 배너 배경 색 */
   /* --top-banner-bg: var(--body-bg); */
-  --top-banner-bg: #000000;
+  --top-banner-bg: #275c21;
   /* 상단 배너 글자 색 */
   --top-banner-font: #ffffff;
 
   /* 빅 버튼 */
   /* 빅 버튼 배경 색 */
-  --cta-button-bg: #01c0e2;
+  --cta-button-bg: #FF4976;
   /* 빅 버튼 글자 색 */
   --cta-button-font: #ffffff;
 
@@ -48,7 +48,7 @@
 
   /* 전체 구역 색상 */
   /* 배경 색 */
-  --section-title-bg: var(--body-bg);
+  --section-title-bg: #ffffff;
   /* 글자 색 */
   --section-title-font: #000000;
   /* 카드 색 */
@@ -111,6 +111,41 @@
   --footer-font-sub: #737373;
 }
 
+.top-banner-big-container {
+  display: block;
+  height: 400px;
+}
+
+
+.top-banner-big {
+  width: 1024px;
+  background: var(--top-banner-bg);
+  color: var(--top-banner-font);
+  position: relative;
+}
+
+.top-banner-big__image-container {
+  width: 1024px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
+}
+
+.top-banner__image-big {
+  width: 1024px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.top-banner-big__content {
+  width: 1024px;
+  height: 400px;
+  position: absolute;
+  z-index: 5;
+}
+
 body {
   background-color: var(--body-bg);
   display: flex;
@@ -163,7 +198,8 @@ a {
 }
 /* 헤더 */
 .header__logo {
-  margin-left: 24px;
+  margin-right: 0px;
+  
 }
 
 nav {
@@ -190,6 +226,7 @@ nav {
 
 .top-banner {
   height: 400px;
+  width: 1024px;
   background: var(--top-banner-bg);
   color: var(--top-banner-font);
   display: flex;
@@ -218,10 +255,11 @@ nav {
 .top-banner__title {
   font-size: 24px;
   line-height: 33px;
+  
 }
 
 .top-banner__subtitle {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
 }
 
@@ -248,7 +286,7 @@ nav {
 }
 
 #service-section > .section-title {
-  background-color: var(--service-title-bg);
+  background-color: #ffffff;
   color: var(--service-title-font);
 }
 
@@ -281,18 +319,13 @@ nav {
   color: var(--product-card-subtitle-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__tag {
-  color: var(--product-card-tag-font);
-  background-color: var(--product-card-tag-bg);
-}
-
 
 #team-section > .section-title {
-  background-color: var(--team-title-bg);
+  background-color: #ffffff;
   color: var(--team-title-font);
 }
 
-#team-section > .grid-4fr > .card__ {
+#team- > .grid-4fr > .card__ {
   background-color: var(--team-card-bg);
 }
 
@@ -319,6 +352,7 @@ nav {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 49px;
+  color: #FF4976;
 }
 
 .grid-3fr {
@@ -366,6 +400,7 @@ nav {
   height: 29px;
   padding: 4px 8px;
   border-radius: 4px;
+  background-color: #f5f5f5;
 }
 
 /* 프로모션 배너 이미지 */
@@ -376,6 +411,12 @@ nav {
   max-height: 250px;
   object-fit: cover;
   border-radius: 6px;
+}
+
+.promotion-banner-text{
+
+  font-size: 50px;
+  color : #ffffff;
 }
 
 /* 상담 버튼 */
@@ -399,6 +440,8 @@ nav {
 }
 .footer__top__logo {
   width: 50%;
+  font-size: 25px;
+  font-weight: 500;
 }
 .footer__top__info {
   width: 50%;
